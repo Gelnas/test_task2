@@ -1,11 +1,13 @@
 Для того чтобы запустить приложение необходимо развернуть базу данных Postgres под названием stat
 Добавить таблицу в БД
+>>
 CREATE TABLE IF NOT EXISTS words
 (
     id          bigserial          PRIMARY KEY,
     word        varchar(128)       NOT NULL,
     count       smallint           NOT NULL
 );
+>>
 Далее открыть проект через IDE
 И запустить программу
 
